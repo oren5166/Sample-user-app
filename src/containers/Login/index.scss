@@ -1,0 +1,13 @@
+@import '../../scss/variables';
+
+.wrapper {
+    background-color: $bg-color-dark ;
+    min-height: $min-height-100;
+    color: $wrapper-color;
+    font-size: $fs12;
+}
+
+.loginForm {
+    margin-top: $margin-top-200;
+    width: $width-35;
+}

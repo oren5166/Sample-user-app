@@ -1,0 +1,7 @@
+@import '../../scss/variables';
+
+.wrapper-table {
+    max-height: $max-height-75;
+    overflow: auto;
+    text-transform: capitalize;
+}

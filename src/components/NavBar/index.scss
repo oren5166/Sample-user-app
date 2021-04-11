@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+
+.ascImg {
+    transform: $ts-ascImg;
+    cursor: pointer
+}
+
+.descImg {
+    transform: $ts-descImg;
+    cursor: pointer
+}
+
+.trashImg {
+    height: $trash-img-height;
+}
+
+.disable {
+   opacity: $disable-opacity;
+}
+
+.enable {
+  cursor: $enable-cursor;
+}
