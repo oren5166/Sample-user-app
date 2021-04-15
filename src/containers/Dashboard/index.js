@@ -2,7 +2,6 @@
 
 import React, {useContext, useState, useEffect} from 'react';
 import Context from '../../context/Context';
-import axios from '../../axios';
 import {useHistory} from "react-router-dom";
 import NavBar from '../../components/NavBar';
 import Table from '../../components/Table'
@@ -73,7 +72,7 @@ const Dashboard = ({location}) => {
 
     const handleScroll = e => { // Calculates the height of a scroll bar that imports new data if it reaches the end
         if (e.target.scrollHeight - e.target.scrollTop <= e.target.clientHeight+1) {
-            setQueryParamsPage(queryParamsPage + 20);
+            setQueryParamsPage(queryParamsPage + queryParamsLimit);
         }
     };
 

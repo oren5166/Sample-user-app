@@ -29,6 +29,7 @@ const Login = () => {
     const handleChange = (e, field) => {
         e.target.name === PASSWORD ? setPassword(e.target.value) : setUserName(e.target.value);
         const fields = {password, userName};
+        console.log(fields);
         const errors = handleValidation(fields);
         setErrors(errors);
     }
